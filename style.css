@@ -1,133 +1,104 @@
+/* Base Styles (Mobile-First) */
 * {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
-  }
-  
-  html {
+    padding: 0;
+}
+
+html {
     font-size: 1rem;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Poppins", sans-serif;
-    max-width:100%;
+    min-height: 100vh;
     line-height: 1.5;
     background-color: #ddd;
     display: flex;
     flex-direction: column;
-  }
-  
-  .container {
+}
+
+.container {
     background-color: white;
-    max-width: 100%;
+    width: 100%;
     margin: auto;
-    padding: 1.5rem;
-  }
-  
-  header{
-    margin:20px;
-  }
-  header h1{
-    font-size:2rem;
-  }
-    header h2{
-    font-size:1.5rem;
-  }
-  .wrapper {
+    padding: 1rem;
+}
+
+.wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 20px;
-    gap: 15px;
-  }
-  
-  .contact, .skills, .education, .profile, .experience {
-    margin: 20px 0;
-  }
-  
-  .contact h3, .skills h3, .education h3, .profile h3, .experience h3 {
-    margin: 15px 0;
-  }
-  
-  .col1, .col2 {
+    gap: 10px;
+}
+
+.contact, .skills, .education, .profile, .experience {
+    margin: 1.25rem 0;
+}
+
+.contact h3, .skills h3, .education h3, .profile h3, .experience h3 {
+    margin: 1rem 0;
+}
+
+.col1, .col2 {
     flex: 1 1 50%;
-  }
-  
-  .contact p, .education p {
-    margin: 3px 0 3px 5px;
-  }
-  
-  .contact a {
+}
+
+.contact p, .education p {
+    margin: 0.2rem 0 0.2rem 0.3rem;
+}
+
+.contact a {
     text-decoration: none;
     color: black;
-  }
-  
-  .contact .icon {
-    margin-right: 8px;
-  }
-  
-  .skills ul li {
-    margin: 3px 0 3px 20px;
-  }
-  
-  .education p {
-    margin: 5px;
-  }
-  
-  .profile {
-    text-align: justify;
-  }
-  
-  .experience ul li {
-    margin: 5px 0;
-  }
-  
-  .job {
+    word-break: break-word;
+}
+
+.contact .icon {
+    margin-right: 0.5rem;
+}
+
+.skills ul li {
+    margin: 0.2rem 0 0.2rem 1.25rem;
+}
+
+.education p {
+    margin: 0.3rem;
+}
+
+.profile {
+    text-align: left;
+}
+
+.experience ul li {
+    margin: 0.3rem 0;
+}
+
+.job {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 0.9rem;
-    margin: 5px 0;
+    margin: 0.3rem 0;
     color: #333;
-  }
-  
-  .timeline {
+}
+
+.timeline {
     font-style: italic;
-  }
-  
-  .jobs {
-    margin: 15px 0;
-  }
-  
-  /* Add responsive styles for larger screens */
-  @media (min-width: 768px) {
+}
+
+.jobs {
+    margin: 1rem 0;
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 768px) {
     .container {
-      max-width: 70%;
+        max-width: 70%;
     }
+}
+
+@media (min-width: 1024px) {
     .wrapper {
-      flex-direction: row;
+        flex-direction: row;
+        gap: 15px;
     }
-    .contact,.skills,.education,.profile,.experience{
-        margin-bottom:30px;
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .container {
-        padding: 1rem;
-      }
-      .wrapper {
-        gap: 30px; /* Spacing between columns */
-        padding: 0 10px;
-      }
-      .col1, .col2 {
-        flex: 1 1 50%; /* Keep two columns but avoid crowding */
-      }
-      header h1 {
-        font-size: 1.6rem;
-      }
-      header h2 {
-        font-size: 1.3rem;
-      }
-      h3{
-        font-size:1.1rem;
-      }
-  }
+}
