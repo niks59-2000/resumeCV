@@ -25,11 +25,16 @@ body {
     padding: 1rem;
 }
 
+header{
+    margin:1.25rem;
+}
+
 .wrapper {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction:column;
+    /* justify-content: space-between; */
     gap: 10px;
+    margin:1.25rem;
 }
 
 .contact, .skills, .education, .profile, .experience {
@@ -66,12 +71,16 @@ body {
     margin: 0.3rem;
 }
 
+.education h5{
+    font-size:0.9rem;
+}
+
 .profile {
-    text-align: left;
+    text-align: justify;
 }
 
 .experience ul li {
-    margin: 0.3rem 0;
+    margin: 0.5rem 1.25rem;
 }
 
 .job {
@@ -86,7 +95,8 @@ body {
 }
 
 .jobs {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
+    line-height:1.6;
 }
 
 /* Responsive Adjustments for Larger Screens */
@@ -94,11 +104,15 @@ body {
     .container {
         max-width: 70%;
     }
-}
-
-@media (min-width: 1024px) {
     .wrapper {
         flex-direction: row;
         gap: 15px;
     }
 }
+
+/* @media (min-width: 1024px) {
+    .wrapper {
+        flex-direction: row;
+        gap: 15px;
+    }
+} */
