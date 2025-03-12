@@ -102,7 +102,7 @@ header{
 /* Responsive Adjustments for Larger Screens */
 @media (min-width: 768px) {
     .container {
-        max-width: 70%;
+        max-width: 60%;
     }
     .wrapper {
         flex-direction: row;
@@ -110,6 +110,11 @@ header{
     }
 }
 
+@media (max-width: 600px) {
+    .profile {
+        text-align: left;
+    }
+}
 /* @media (min-width: 1024px) {
     .wrapper {
         flex-direction: row;
