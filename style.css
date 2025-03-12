@@ -102,7 +102,7 @@ header{
 /* Responsive Adjustments for Larger Screens */
 @media (min-width: 768px) {
     .container {
-        max-width: 60%;
+        max-width: 55%;
     }
     .wrapper {
         flex-direction: row;
